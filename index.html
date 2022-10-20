@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Silkscreen">
+</head>
+  <body>
+    <main>
+        <div class="under-background">
+            <section class="filters">
+                <div class="basic-title"><img id="pokedex" src="Pokedex_logo.png" /></div>
+                <form id="form-filters" class="form-filters">
+                    <label><input class="checkbox" id="grass" type="checkbox" checked /><span>grass</span></label>
+                    <label><input class="checkbox" id="poison" type="checkbox" checked /><span>poison</span></label>
+                    <label><input class="checkbox" id="fire" type="checkbox" checked /><span>fire</span></label>
+                    <label><input class="checkbox" id="flying" type="checkbox" checked /><span>flying</span></label>
+                    <label><input class="checkbox" id="bug" type="checkbox" checked /><span>bug</span></label>
+                    <label><input class="checkbox" id="water" type="checkbox" checked /><span>water</span></label>
+                    <label><input class="checkbox" id="normal" type="checkbox" checked /><span>normal</span></label>
+                    <label><input class="checkbox" id="ground" type="checkbox" checked /><span>ground</span></label>
+                    <label><input class="checkbox" id="electric" type="checkbox" checked /><span>electric</span></label>
+                    <label><input class="checkbox" id="fairy" type="checkbox" checked /><span>fairy</span></label>
+                    <label><input class="checkbox" id="fighting" type="checkbox" checked /><span>fighting</span></label>
+                    <label><input class="checkbox" id="psychic" type="checkbox" checked /><span>psychic</span></label>
+                    <label><input class="checkbox" id="rock" type="checkbox" checked /><span>rock</span></label>
+                    <label><input class="checkbox" id="steal" type="checkbox" checked /><span>steal</span></label>
+                    <label><input class="checkbox" id="ice" type="checkbox" checked /><span>ice</span></label>
+                    <label><input class="checkbox" id="ghost" type="checkbox" checked /><span>ghost</span></label>
+                    <label><input class="checkbox" id="dragon" type="checkbox" checked /><span>dragon</span></label>
+                    <div>
+                        <input id="pokemon-name" type="text" placeholder="Pokemon name" autocomplete="off"/>
+                        <button id="checkmark-reset" type="button">Reset filters</button>
+                        <button id="checkmark-set" type="button">Select all tags</button>
+                    </div>
+                </form>
+            </section>
+            <section id="pokemons" class="pokemons">
+            </section>
+        </div>
+    </main>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
